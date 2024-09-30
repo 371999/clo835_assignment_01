@@ -11,6 +11,7 @@ COPY . .
 
 # Upgrade pip and install Python dependencies
 RUN pip install --upgrade pip
+RUN pip uninstall werkzeug -y
 RUN pip install -r requirements.txt
 
 # Expose the port the app runs on
