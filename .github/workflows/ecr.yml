@@ -30,7 +30,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: clo835_week_04_assignment_01_app
-        IMAGE_TAG: v1.0
+        IMAGE_TAG: v2.0
       run: |
         ls -ltra
         # Docker build
@@ -46,7 +46,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: clo835_week_04_assignment_01_db
-        IMAGE_TAG: v1.0
+        IMAGE_TAG: v2.0
       run: |
         ls -ltra
         # Docker build Dockerfile_mysql
